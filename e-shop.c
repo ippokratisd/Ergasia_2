@@ -66,7 +66,7 @@ void customer_order(int fd_order[2])
 }
 
 
-//Συναρτηση που αποθηκευει το το αποτελεσμα (επιτυχης/αποτυχεις παραγγελια) στην διοχετευση fd_response 
+//Συναρτηση που αποθηκευει το αποτελεσμα (επιτυχης/αποτυχεις παραγγελια) στην διοχετευση fd_response 
  void customer_order_result(int customer, int fd_response[2]) {
     char response[350];
     read(fd_response[0], response, sizeof(response));
